@@ -9,14 +9,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tasks: [
-        {title:'Test0', body:'Tests bo0dy'},
-        {title:'Test1', body:'Tests1 body'},
-        {title:'Test2', body:'Tests 2body'},
-        {title:'Test3', body:'Tests b3ody'},
+      tasks:  [
+        {title: 'Test', body: 'Test body'},
+        {title: 'Test', body: 'Test body'},
+        {title: 'Test', body: 'Test body'},
+        {title: 'Test', body: 'Test body'},
       ]
     };
-
     this.addTask = this.addTask.bind(this);
   }
 
@@ -35,7 +34,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1 className="display-1 text-primary text-center ">TO-DO App</h1>
         <AddTask addTask={this.addTask}/>
+        <br />
         <Tasks 
           tasks={this.state.tasks}
           delete={this.delete.bind(this)}/>

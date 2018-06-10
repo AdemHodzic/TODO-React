@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import styles from '../Styles/AddTasks.css';
+
 class AddTask extends Component {
 
     constructor(props) {
@@ -29,20 +31,22 @@ class AddTask extends Component {
 
     render() {
         return (
-            <div>
+            <div style={styles.div}>
                 <h1>Add Tasks</h1>
                 <form onSubmit={this.submit}>
-                    <div>
-                        <label>Title</label>
-                        <input 
+                    <div className="form-group">
+                        <label><h5 >Title</h5></label>
+                        <input
+                            className="form-control" 
                             type="text" 
                             value={this.state.title} 
                             name="title" 
                             onChange={this.handleChange}/>
                     </div>
-                    <div>
-                        <label>Body</label>
-                        <input 
+                    <div className="form-group">
+                        <label><h5 >Body</h5></label>
+                        <input
+                            className="form-control" 
                             type="text" 
                             value={this.state.body} 
                             name="body" 
@@ -50,7 +54,6 @@ class AddTask extends Component {
                     </div>
                     <button className="btn btn-outline-success">Add Task</button>
                 </form>
-                <hr />
             </div>
         );
     }

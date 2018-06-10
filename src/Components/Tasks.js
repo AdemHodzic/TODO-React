@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 
 import Task from './Task';
 
-import styles from '../Styles/Tasks.css';
 
 class Tasks extends Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const tasks = this.props.tasks.map( (e) => {

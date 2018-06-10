@@ -1,7 +1,11 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+* {
+  margin: 0.5rem;
+  
+}
+
 body {
-  margin: 1rem;
   padding: 1rem;
   font-family: sans-serif;
 }

@@ -7,7 +7,9 @@ const Task = (props) => {
         <div  style={styles.div}>
             <h3>{props.title}</h3>
             <p>{props.body}</p>
-            <button className="btn btn-outline-danger" onClick={props.handleClick.bind(this, props.title)}>Delete</button>
+            <button 
+                className="btn btn-outline-danger" 
+                onClick={props.handleClick.bind(this, props.title)}>Delete</button>
         </div>
     );
 }
